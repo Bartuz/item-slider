@@ -1,0 +1,21 @@
+.mi-slider
+	position: relative
+	margin-top: 30px
+	height: 490px
+	ul
+		list-style-type: none
+		position: absolute
+		width: 100%
+		left: 0
+		bottom: 140px
+		overflow: hidden
+		text-align: content
+		pointer-events: none
+		&.list-current
+			pointer-events: auto
+		.no-js & // FOR MODERNIZR!
+			position: relative
+			left: auto
+			bottom: auto
+			margin: 0
+			overflow: visible
