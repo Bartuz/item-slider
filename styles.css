@@ -1,3 +1,39 @@
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(600%);
+    -webkit-transform: translateX(600%); }
+
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); } }
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-600%);
+    -webkit-transform: translateX(-600%); }
+
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); } }
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+
+  100% {
+    transform: translateX(600%);
+    -webkit-transform: translateX(600%); } }
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+
+  100% {
+    transform: translateX(-600%);
+    -webkit-transform: translateX(-600%); } }
+
 @keyframes scaleUp {
   0% {
     transform: translateX(0) scale(0);

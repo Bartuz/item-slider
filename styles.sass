@@ -1,5 +1,34 @@
 $class-names: "moveFromRight", "moveFromLeft", "moveToRight", "moveToLeft"
-
+@each $class-name in $class-names
+	@keyframes #{$class-name}
+		@if $class-name == "moveFromRight"
+			0%
+				transform: translateX(600%)
+				-webkit-transform: translateX(600%)
+			100%
+				transform: translateX(0%)
+				-webkit-transform: translateX(0%)
+		@else if $class-name == "moveFromLeft"
+			0%
+				transform: translateX(-600%)
+				-webkit-transform: translateX(-600%)
+			100%
+				transform: translateX(0%)
+				-webkit-transform: translateX(0%)
+		@else if $class-name == "moveToRight"
+			0%
+				transform: translateX(0%)
+				-webkit-transform: translateX(0%)
+			100%
+				transform: translateX(600%)
+				-webkit-transform: translateX(600%)
+		@else
+			0%
+				transform: translateX(0%)
+				-webkit-transform: translateX(0%)
+			100%
+				transform: translateX(-600%)
+				-webkit-transform: translateX(-600%)			
 @keyframes scaleUp
 	0%
 		transform: translateX(0) scale(0)
