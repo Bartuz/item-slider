@@ -11,7 +11,7 @@
 		overflow: hidden
 		text-align: center
 		pointer-events: none
-		&.list-current
+		&.item-current
 			pointer-events: auto
 		.no-js & // FOR MODERNIZR!
 			position: relative
@@ -27,6 +27,7 @@
 			transform: translateX(600%)
 			-webkit-transform: translateX(600%)
 			transition: opacity .2s linear
+			-webkit-transition: opacity .2s linear
 			.no-js & // FOR MODERNIZR!
 				transform: translateX(0)
 			a, img
@@ -47,3 +48,24 @@
 				padding: 20px 10px 0
 			&:hover
 				opacity: .7
+	nav
+		position: relative
+		top: 400px
+		text-align: center
+		max-width: 800px
+		margin: 0 auto
+		border-top: 5px solid #333
+		.no-js &
+			display: none
+		a
+			display: inline-block
+			text-transform: uppercase
+			letter-spacing: 5px
+			padding: 40px 30px 30px 34px
+			position: relative
+			color: #888
+			outline: none
+			transition: color .2s linear
+			-webkit-transition: color .2s linear
+			&:hover, & .item-current
+				color: #000
