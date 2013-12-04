@@ -1,4 +1,4 @@
-.mi-slider
+.item-slider
 	position: relative
 	margin-top: 30px
 	height: 490px
@@ -19,3 +19,31 @@
 			bottom: auto
 			margin: 0
 			overflow: visible
+		li
+			display: inline-block
+			padding: 20px
+			width: 20%
+			max-width: 300px
+			transform: translateX(600%)
+			-webkit-transform: translateX(600%)
+			transition: opacity .2s linear
+			.no-js & // FOR MODERNIZR!
+				transform: translateX(0)
+			a, img
+				display: block
+				margin: auto
+			a
+				outline: none
+				cursor: pointer
+			img
+				max-width: 100%
+				border: none
+			h4
+				display: inline-block
+				font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman"
+				font-style: italic
+				font-weight: 400
+				font-size: 18px
+				padding: 20px 10px 0
+			&:hover
+				opacity: .7
