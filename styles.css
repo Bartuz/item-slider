@@ -47,6 +47,17 @@
   position: relative;
   margin-top: 30px;
   height: 490px; }
+  @media screen and (max-width: 910px) {
+    .item-slider nav {
+      max-width: 90%; }
+      .item-slider nav a {
+        font-size: 12px;
+        padding: 40px 10px 30px 14px; } }
+  @media screen and (max-width: 740px) {
+    .item-slider {
+      height: 300px; }
+      .item-slider nav {
+        top: 220px; } }
   .item-slider ul {
     list-style-type: none;
     position: absolute;

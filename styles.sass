@@ -41,6 +41,16 @@ $class-names: "moveFromRight", "moveFromLeft", "moveToRight", "moveToLeft"
 	position: relative
 	margin-top: 30px
 	height: 490px
+	@media screen and (max-width: 910px)
+		nav
+			max-width: 90%
+			a
+				font-size: 12px
+				padding: 40px 10px 30px 14px
+	@media screen and (max-width: 740px)
+		height: 300px
+		nav
+			top: 220px
 	ul
 		list-style-type: none
 		position: absolute
