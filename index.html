@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class='no-js'>
+<html>
   <head>
     <title>Nina Peplińska</title>
     <meta charset='UTF-8'>
     <link href='styles.css' rel='stylesheet'>
-    <script src='libraries/modernizr.js'></script>
+    <!-- %script{src: "libraries/modernizr.js"} -->
   </head>
   <body>
-    <div class='item-slider' id='item-slider'>
+    <div class='mi-slider' id='mi-slider'>
       <ul>
         <li>
           <a href='#'>
@@ -120,5 +120,11 @@
       </nav>
     </div>
   </body>
+  <script src='libraries/jquery.js'></script>
   <script src='script.js'></script>
+  <script>
+    $(function() {
+    	$( '#mi-slider').catslider();
+    });
+  </script>
 </html>

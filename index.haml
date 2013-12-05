@@ -1,12 +1,12 @@
 !!!
-%html.no-js
+%html
 	%head
 		%title Nina Peplińska
 		%meta{charset: "UTF-8"}
 		%link{rel: "stylesheet", href: "styles.css"}
-		%script{src: "libraries/modernizr.js"}  
+		/ %script{src: "libraries/modernizr.js"}  
 	%body
-		.item-slider#item-slider
+		.mi-slider#mi-slider
 			-# ul*4>li*4>a>img SO EASY!!!!
 			%ul 
 				%li 
@@ -81,4 +81,9 @@
 				%a{:href => "#"} Zwierzęta
 				%a{:href => "#"} Foki
 				%a{:href => "#"} Krokodyle
+	%script{src: "libraries/jquery.js"}
 	%script{src: "script.js"} 
+	:javascript
+		$(function() {
+			$( '#mi-slider').catslider();
+		});
