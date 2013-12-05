@@ -58,6 +58,22 @@
       height: 300px; }
       .item-slider nav {
         top: 220px; } }
+  @media screen and (max-width: 490px) {
+    .item-slider {
+      text-align: center;
+      height: auto; }
+      .item-slider nav {
+        display: none; }
+      .item-slider ul {
+        position: relative;
+        display: inline;
+        bottom: auto;
+        pointer-events: auto; }
+        .item-slider ul li {
+          animation: none !important;
+          transform: translateX(0) !important;
+          padding: 10px 3px;
+          min-width: 140px; } }
   .item-slider ul {
     list-style-type: none;
     position: absolute;
